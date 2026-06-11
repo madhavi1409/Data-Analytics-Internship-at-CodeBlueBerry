@@ -1,0 +1,12 @@
+name = input("enter your name")
+age = int(input("enter your age"))
+percentage = float(input("enter the scored percentage"))
+is_student_available = True
+print("name is", (name))
+print("age is", (age))
+print("percentage is", (percentage))
+print("the availability of studeni is", (is_student_available))
+print(type(name))
+print(type(age))
+print(type(percentage))
+print(type(is_student_available))

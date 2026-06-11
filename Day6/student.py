@@ -1,0 +1,5 @@
+name = input("Enter Student Name: ")
+roll_no = input("Enter Roll_number: ")
+file = open("student.txt", "a")
+file.write(roll_no + " " + name + "\n")
+file.close()

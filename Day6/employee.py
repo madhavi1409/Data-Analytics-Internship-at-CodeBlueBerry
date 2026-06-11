@@ -1,0 +1,7 @@
+emp_id = input("Enter Employee ID: ")
+name = input("Enter Employee Name: ")
+salary = input("Enter Salary: ")
+file = open("employee.txt", "a")
+file.write(emp_id + " " + name + " " + salary + "\n")
+file.close()
+print("Employee Record Saved")

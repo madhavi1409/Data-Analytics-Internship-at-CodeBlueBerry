@@ -1,0 +1,8 @@
+name = input("Enter student name: ")
+print("Original Name:", name)
+print("Name in Uppercase:", name.upper())
+print("Name in Lowercase:", name.lower())
+print("Name Length:", len(name))
+print("First Character:", name[0])
+print("Last Character:", name[-1])
+print("Number of Words:", len(name.split()))

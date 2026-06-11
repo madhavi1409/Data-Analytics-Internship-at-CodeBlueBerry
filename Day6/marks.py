@@ -1,0 +1,12 @@
+name = input("Enter Student Name: ")
+marks = input("Enter Marks: ")
+file = open("marks.txt", "a")
+file.write(name + " " + marks + "\n")
+file.close()
+print("Marks Saved Successfully")
+file = open("marks.txt", "r")
+data = file.read()
+print(data)
+data = file.read()
+print(data)
+
