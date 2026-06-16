@@ -1,0 +1,11 @@
+import pandas as pd
+df = pd.read_excel("zomato data.xlsx", sheet_name="Sheet1")
+print("Total Restaurants:", len(df))
+print("Average Rating:", df["Rating"].mean())
+print("Highest Rating:", df["Rating"].max())
+print("Lowest Rating:", df["Rating"].min())
+print("Average Votes:", df["Votes"].mean())
+print("Maximum Votes:", df["Votes"].max())
+print("Average Cost for Two:", df["Average_Cost_for_two"].mean())
+top_restaurants = df.sort_values(by="Rating", ascending=False)
+print(top_restaurants[["RestaurantName", "City", "Rating"]].head())
